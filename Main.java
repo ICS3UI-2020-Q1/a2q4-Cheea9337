@@ -43,13 +43,13 @@ public class Main {
     System.out.println("They will recieve 10% off");
     System.out.println("They will save " + "$" + savedMoney);
     System.out.println("The new total is " + "$" + finalTotal);
-    } else if (moneySpent >= TWENTY_LOW || moneySpent <= TWENTY_HIGH) {
+    } else if (moneySpent >= TWENTY_LOW && moneySpent <= TWENTY_HIGH) {
       double savedMoney = moneySpent * 0.20;
       double finalTotal = moneySpent - savedMoney;
       System.out.println("They will recieve 20% off");
       System.out.println("They will save " + "$" + savedMoney);
       System.out.println("The new total is " + "$" + finalTotal);
-    } else if (moneySpent >= THIRTY_LOW || moneySpent <= THIRTY_HIGH) {
+    } else if (moneySpent >= THIRTY_LOW && moneySpent <= THIRTY_HIGH) {
       double savedMoney = moneySpent * 0.30;
       double finalTotal = moneySpent - savedMoney;
       System.out.println("They will recieve 30% off");
